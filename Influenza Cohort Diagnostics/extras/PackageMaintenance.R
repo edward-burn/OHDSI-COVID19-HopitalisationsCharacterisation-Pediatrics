@@ -25,7 +25,7 @@ shell("R CMD Rd2pdf ./ --output=extras/InfluenzaHospCohortDiagPeds.pdf")
 
 
 # Insert cohort definitions from ATLAS into package -----------------------
-ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreateInfluenza.csv",
+ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreateInfluenzaPediatrics.csv",
                                                  baseUrl = "http://10.80.192.24:8080/WebAPI",
                                                  insertTableSql = TRUE,
                                                  insertCohortCreationR = TRUE,

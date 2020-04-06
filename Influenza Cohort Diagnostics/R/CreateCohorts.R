@@ -48,7 +48,7 @@
   
   
   # Instantiate cohorts:
-  pathToCsv <- system.file("settings", "CohortsToCreateInfluenza.csv", package = "InfluenzaHospCohortDiag")
+  pathToCsv <- system.file("settings", "CohortsToCreateInfluenzaPediatrics.csv", package = "InfluenzaHospCohortDiag")
   cohortsToCreate <- read.csv(pathToCsv)
   for (i in 1:nrow(cohortsToCreate)) {
     writeLines(paste("Creating cohort:", cohortsToCreate$name[i]))

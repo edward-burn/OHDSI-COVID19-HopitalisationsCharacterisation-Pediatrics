@@ -97,7 +97,7 @@ runCohortDiagnostics <- function(connectionDetails,
   
   ParallelLogger::logInfo("Running study diagnostics")
   CohortDiagnostics::runCohortDiagnostics(packageName = "InfluenzaHospCohortDiagPeds",
-                                          cohortToCreateFile = "settings/CohortsToCreateInfluenza.csv",
+                                          cohortToCreateFile = "settings/CohortsToCreateInfluenzaPediatrics.csv",
                                           connectionDetails = connectionDetails,
                                           cdmDatabaseSchema = cdmDatabaseSchema,
                                           oracleTempSchema = oracleTempSchema,
