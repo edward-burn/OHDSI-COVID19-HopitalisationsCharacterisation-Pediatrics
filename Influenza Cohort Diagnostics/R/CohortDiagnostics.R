@@ -1,6 +1,6 @@
 # Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of InfluenzaHospCohortDiag
+# This file is part of InfluenzaHospCohortDiagPeds
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -96,7 +96,7 @@ runCohortDiagnostics <- function(connectionDetails,
   }
   
   ParallelLogger::logInfo("Running study diagnostics")
-  CohortDiagnostics::runCohortDiagnostics(packageName = "InfluenzaHospCohortDiag",
+  CohortDiagnostics::runCohortDiagnostics(packageName = "InfluenzaHospCohortDiagPeds",
                                           cohortToCreateFile = "settings/CohortsToCreateInfluenza.csv",
                                           connectionDetails = connectionDetails,
                                           cdmDatabaseSchema = cdmDatabaseSchema,

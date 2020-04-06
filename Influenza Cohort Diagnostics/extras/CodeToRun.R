@@ -17,7 +17,7 @@
 # devtools::install_github("OHDSI/CohortDiagnostics", ref="develop")
 
 # Load the package
-library(InfluenzaHospCohortDiag)
+library(InfluenzaHospCohortDiagPeds)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
 options(fftempdir = "C:/FFtemp")
@@ -36,7 +36,7 @@ maxCores <- parallel::detectCores()
 # oracleTempSchema <- NULL
 
 # Details specific to the database:
-# outputFolder <- "s:/InfluenzaHospCohortDiag/mdcd"
+# outputFolder <- "s:/InfluenzaHospCohortDiagPeds/mdcd"
 # cdmDatabaseSchema <- "cdm_ibm_mdcd_v1023.dbo"
 # cohortDatabaseSchema <- "scratch.dbo"
 # cohortTable <- "mschuemi_skeleton_mdcd"

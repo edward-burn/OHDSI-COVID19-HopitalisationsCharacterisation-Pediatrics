@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of InfluenzaHospCohortDiag
+# This file is part of InfluenzaHospCohortDiagPeds
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("InfluenzaHospCohortDiag")
+OhdsiRTools::checkUsagePackage("InfluenzaHospCohortDiagPeds")
 OhdsiRTools::updateCopyrightYearFolder()
 
 # Create manual -----------------------------------------------------------
-shell("rm extras/InfluenzaHospCohortDiag.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/InfluenzaHospCohortDiag.pdf")
+shell("rm extras/InfluenzaHospCohortDiagPeds.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/InfluenzaHospCohortDiagPeds.pdf")
 
 
 # Insert cohort definitions from ATLAS into package -----------------------
@@ -30,8 +30,8 @@ ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/Cohor
                                                  insertTableSql = TRUE,
                                                  insertCohortCreationR = TRUE,
                                                  generateStats = TRUE,
-                                                 packageName = "InfluenzaHospCohortDiag")
+                                                 packageName = "InfluenzaHospCohortDiagPeds")
 
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("InfluenzaHospCohortDiag")
+OhdsiRTools::insertEnvironmentSnapshotInPackage("InfluenzaHospCohortDiagPeds")
