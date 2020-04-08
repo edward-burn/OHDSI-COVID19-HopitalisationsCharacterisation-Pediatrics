@@ -55,14 +55,14 @@ runCohortDiagnostics(connectionDetails = connectionDetails,
                      databaseName = databaseName,
                      databaseDescription = databaseDescription,
                      createCohorts = TRUE,
-                     runInclusionStatistics = FALSE,
-                     runIncludedSourceConcepts = FALSe,
+                     runInclusionStatistics = TRUE,
+                     runIncludedSourceConcepts = FALSE,
                      runOrphanConcepts = FALSE,
                      runTimeDistributions = FALSE,
-                     runBreakdownIndexEvents = FALSE,
+                     runBreakdownIndexEvents = TRUE,
                      runIncidenceRates = FALSE,
                      runCohortOverlap = FALSE,
-                     runCohortCharacterization = FALSE,
+                     runCohortCharacterization = TRUE,
                      minCellCount = 10)
 
 # To view your results: 
